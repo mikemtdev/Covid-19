@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.Footer-Container {
+    background-color:#555;
+    padding:1rem 0rem;
+   
+    
+}
+
+.footer-list {
+    list-style:none;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+
+}
+
+.footer-list li a {
+    text-decoration:none;
+    color:#fff;
+}
