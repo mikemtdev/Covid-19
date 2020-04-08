@@ -1,24 +1,28 @@
-.infolinks-Container {   
-display:flex;
-justify-content: space-between;
-margin: 0 2rem 2rem 2rem;
+.infolinks-Container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem 2rem 2rem;
 }
 
-.infolinks-item{
-    background-color:#5555;
-    padding:2rem 3rem 1rem 3rem;
+.infolinks-item {
+  background-color: #5555;
+  padding: 2rem 3rem 1rem 3rem;
 }
 
 .infolinks-list {
-display:block;
-list-style:none;
+  display: block;
+  list-style: none;
+}
 
-}
 .infolinks-list li {
-    padding-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: 2rem;
 }
+
 .infolinks-list li a {
-    text-decoration:none;
-    color:#000;
-    padding:0.3rem;
+  border: 2px solid #fff;
+  text-decoration: none;
+  color: #000;
+  padding: 0.5rem;
 }
+/* TODO: Use grid on items */

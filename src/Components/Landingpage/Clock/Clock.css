@@ -1,20 +1,17 @@
 .clockmain-Container {
-    background-color:#000;
-    height: 100vh;
-
+  background-color: #000;
+  height: 100vh;
 }
-.clock-container{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    height:100%;
-  
 
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
+
 .clock-h1 {
-    padding: 0.5rem 0rem;
-    color:#fff;
-   
+  padding: 0.5rem 0rem;
+  color: #fff;
 }
-
