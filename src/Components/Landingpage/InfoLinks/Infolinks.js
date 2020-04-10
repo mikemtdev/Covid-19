@@ -24,22 +24,13 @@ const Infolinks = () => {
             <div className = 'infolinks-item '>
                 <ul className='infolinks-list'>
                     <li>
-                        <a href='#'>Are there any Vaccines?</a>
-                    </li>
-                    <li>
-                        <a href='#'>How many countries are affected?</a>
-                    </li>
-                    <li>
-                        <a href='#'>Mythbasters</a>
-                    </li>
-                    <li>
-                        <a href='#'>What are the cradible sources to follow?</a>
+                        <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters'>Mythbusters</a>
                     </li>
                 </ul>
             </div>
 
             <div className = 'infolinks-item' >
-                <ul className='infolinks-list'>    
+                <ul className='infolinks-list'>
                     <li>
                         <a href='#'>Who Daily report</a>
                     </li>

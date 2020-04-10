@@ -9,7 +9,7 @@ const Clock = ( ) => {
     <div className = 'clockmain-Container'>
         <div className = 'clock-container'>
             <h1 className = 'clock-h1'>
-                {`Total ${12345}`}
+                {`Comfirmed ${12345}`}
             </h1>
             <h2 className = 'clock-h1'>
                 {`Leading Country ${ContryLeading}`}
