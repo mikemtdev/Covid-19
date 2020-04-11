@@ -11,22 +11,24 @@ import Api from "./Components/Api/Api";
 import './App.css';
 
 function App() {
-  return ( <
-    div className = "App" >
-    <Api />
-    <
-    Header / >
-    <
-    Clock / >
-    <
-    Topleading / >
-    <
-    Infolinks / >
-    <
-    Footer / >
+    return (
+        <div className="App" >
+            <div className="Header-Comp" >
+                <Header />
+            </div>
+            <div className="Clock-Comp" >
+                <Clock />
+            </div>
+            <div className="Topleading-Comp" >
+                <Topleading />
+            </div>
+            <div className="Infor-Comp" >
+                <Infolinks /></div>
+            <div className="Footer-Comp">
+                <Footer />
+            </div>
 
-    <
-    /div>
+        </div>
   );
 }
 

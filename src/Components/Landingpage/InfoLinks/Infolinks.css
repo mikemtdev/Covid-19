@@ -1,28 +1,25 @@
 .infolinks-Container {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 2rem 2rem 2rem;
+  display: inline-grid ;
+  margin : 0 2rem 1rem 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-gap:10px;
 }
-
 .infolinks-item {
-  background-color: #5555;
-  padding: 2rem 3rem 1rem 3rem;
-}
 
+  background-color:#5555;
+  padding:2rem;
+
+}
 .infolinks-list {
-  display: block;
+  display: grid;
   list-style: none;
-}
+  justify-content: center;
+  align-items: center;
 
-.infolinks-list li {
-  padding-bottom: 0.5rem;
-  margin: 2rem;
 }
 
 .infolinks-list li a {
-  border: 2px solid #fff;
-  text-decoration: none;
-  color: #000;
-  padding: 0.5rem;
+  text-decoration:none;
+  color:#000;
+
 }
-/* TODO: Use grid on items */

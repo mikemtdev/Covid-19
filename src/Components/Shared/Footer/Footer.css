@@ -6,13 +6,14 @@
 .Footer-Container {
     background-color:#555;
     padding:1rem 0rem;
-   
-    
+
+
 }
 
 .footer-list {
     list-style:none;
     display:flex;
+    flex-direction:column;
     justify-content: space-around;
     align-items:center;
 
@@ -21,4 +22,15 @@
 .footer-list li a {
     text-decoration:none;
     color:#fff;
+}
+
+@media screen and (min-width: 763px){
+   .footer-list {
+    list-style:none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+
+}
 }

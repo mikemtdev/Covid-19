@@ -1,7 +1,37 @@
 *{
   box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
 
 .App {
-  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "header header header header"
+  "clock clock clock clock"
+  "leading leading leading leading"
+  "info info info info"
+  "footer footer footer footer";
+
+}
+.Header-Comp {
+    margin:0;
+  grid-area : header;
+
+}
+.Clock-Comp {
+  grid-area: clock;
+}
+.Topleading-Comp{
+    grid-area:leading;
+}
+.Infor-Comp {
+  grid-area: info;
+  display:inline-grid;
+}
+
+.Footer-Comp {
+  grid-area: footer;
 }
