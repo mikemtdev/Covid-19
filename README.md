@@ -1,5 +1,5 @@
 ### Covid-19 Site
-#features 
+# Features 
 1. Showing total comfirmed cases
 2. Deaths
 3. Leading countries 
