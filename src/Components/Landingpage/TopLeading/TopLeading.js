@@ -1,52 +1,24 @@
 import React, { Component} from 'react';
 import './TopLeading.css'
 
-const Topleading = () => {
+class Topleading extends Component {
+    render(){
+        const api = {
+            country: 'Zambia',
+            infected: '232',
+            death: '4'
+        }
     return( 
         <div className = 'toplead-container'>
             <div className = 'toplead-item'>
-                <h3>Country</h3>
-                <h4>Infected 233</h4>
-                <h4>Deaths 0</h4>
+                <h3>{api.country}</h3>
+                <p><i>Infected {api.infected}</i></p>
+                 <p><i>Deaths {api.death}</i></p>
             </div>
-            <div className = 'toplead-item'>
-                <h3>Country</h3>
-                <h4>Infected 233</h4>
-                <h4>Deaths 0</h4>
-            </div>
-            <div className = 'toplead-item'>
-                <h3>Country</h3>
-                <h4>Infected 233</h4>
-                <h4>Deaths 0</h4>
-            </div>
-            <div className = 'toplead-item'>
-                <h3>Country</h3>
-                <h4>Infected 233</h4>
-                <h4>Deaths 0</h4>
-            </div>
-            <div className = 'toplead-item'>
-                <h3>Country</h3>
-                <h4>Infected 233</h4>
-                <h4>Deaths 0</h4>
-            </div>
-            <div className = 'toplead-item'>
-                <h3>Country</h3>
-                <h4>Infected 233</h4>
-                <h4>Deaths 0</h4>
-            </div>
-            <div className = 'toplead-item'>
-                <h3>Country</h3>
-                <h4>Infected 233</h4>
-                <h4>Deaths 0</h4>
-            </div>
-            <div className = 'toplead-item'>
-                <h3>Country</h3>
-                <h4>Infected 233</h4>
-                <h4>Deaths 0</h4>
-            </div>
-            
+
         </div> 
     )
+}
 }
 
 export default Topleading;

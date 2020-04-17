@@ -21,16 +21,11 @@ const Infolinks = () => {
                 </ul>
             </div>
 
-            <div className = 'infolinks-item '>
+            <div className = 'infolinks-item' >
                 <ul className='infolinks-list'>
                     <li>
                         <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters'>Mythbusters</a>
                     </li>
-                </ul>
-            </div>
-
-            <div className = 'infolinks-item' >
-                <ul className='infolinks-list'>
                     <li>
                         <a href='#'>Who Daily report</a>
                     </li>
