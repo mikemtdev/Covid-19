@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
+import React from 'react';
+import { BrowserRouter as Router, Route, NavLink, Switch, Redirect } from 'react-router-dom'
 import Downloads from './Downloads/Downloads'
 import ContactUs from './ContactUs/ContactUs'
 import AboutUs from './AboutUs/AboutUs'
+import './menu.png'
 
 import './Header.css'
 
@@ -16,7 +17,7 @@ const Header = () => {
                         <NavLink to='/'>Home </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/downloads'>Downloads</NavLink>
+                        <NavLink to='/report'>Reports</NavLink>
                     </li>
                     <li>
                         <NavLink to='/contact_us'>Contact us </NavLink>
@@ -27,12 +28,16 @@ const Header = () => {
                 </ul>
 
                 {/*Routes */}
-
-                <Route exact path='/downloads' component={Downloads} />
-                <Route exact path='/contact_us' component={ContactUs} />
-                <Route exact path='/about_us' component={AboutUs} />
+                <Switch>
+                    <Route exact path='/' />
+                    <Route exact path='/report' component={Downloads} />
+                    <Route exact path='/contact_us' component={ContactUs} />
+                    <Route exact path='/about_us' component={AboutUs} />
+                </Switch>
+                <Redirect to = '/' />
 
             </Router>
+            <menu />
 
         </div>
     )

@@ -4,7 +4,7 @@
 }
 .navigation-list {
     list-style:none;
-    display:grid;
+    display:none;
     flex-direction:column;
     grid-gap:12px;
     justify-content: center;

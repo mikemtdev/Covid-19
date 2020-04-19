@@ -27,17 +27,15 @@ const Infolinks = () => {
                         <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters'>Mythbusters</a>
                     </li>
                     <li>
-                        <a href='#'>Who Daily report</a>
+                        <a href='#'><b>WHO</b> Daily report</a>
                     </li>
                     <li>
-                        <a href='#'>Other news</a>
+                        <a href='#'>Other News</a>
                     </li>
                     <li>
                         <a href='#'></a>
                     </li>
-                    <li>
-                        <a href='#'>About us</a>
-                    </li>
+      
                 </ul>
             </div>
         </div>

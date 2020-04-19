@@ -5,6 +5,7 @@ import './Clock.css'
 const Clock = ( ) => {
     const newdate = Date();
     const ContryLeading = 'lorem'
+    let api = true;
     return (
     <div className = 'clockmain-Container'>
         <div className = 'clock-container'>
@@ -12,7 +13,7 @@ const Clock = ( ) => {
                 {`Comfirmed ${12345}`}
             </h1>
             <h2 className = 'clock-h1'>
-                {`Leading Country ${ContryLeading}`}
+                {api && `Leading Country ${ContryLeading}`}
             </h2>
             <h3 className = 'clock-h1'>
                 {`Infected ${123}`}
