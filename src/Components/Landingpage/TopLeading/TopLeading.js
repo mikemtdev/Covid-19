@@ -1,52 +1,48 @@
-import React, { Component} from 'react';
-import './TopLeading.css'
+import React, { useState } from 'react';
+import axios from 'axios';
+import './TopLeading.css';
 
 const Topleading = () => {
-    return( 
-        <div className = 'toplead-container'>
-            <div className = 'toplead-item'>
-                <h3>Country</h3>
-                <h4>Infected 233</h4>
-                <h4>Deaths 0</h4>
-            </div>
-            <div className = 'toplead-item'>
-                <h3>Country</h3>
-                <h4>Infected 233</h4>
-                <h4>Deaths 0</h4>
-            </div>
-            <div className = 'toplead-item'>
-                <h3>Country</h3>
-                <h4>Infected 233</h4>
-                <h4>Deaths 0</h4>
-            </div>
-            <div className = 'toplead-item'>
-                <h3>Country</h3>
-                <h4>Infected 233</h4>
-                <h4>Deaths 0</h4>
-            </div>
-            <div className = 'toplead-item'>
-                <h3>Country</h3>
-                <h4>Infected 233</h4>
-                <h4>Deaths 0</h4>
-            </div>
-            <div className = 'toplead-item'>
-                <h3>Country</h3>
-                <h4>Infected 233</h4>
-                <h4>Deaths 0</h4>
-            </div>
-            <div className = 'toplead-item'>
-                <h3>Country</h3>
-                <h4>Infected 233</h4>
-                <h4>Deaths 0</h4>
-            </div>
-            <div className = 'toplead-item'>
-                <h3>Country</h3>
-                <h4>Infected 233</h4>
-                <h4>Deaths 0</h4>
-            </div>
-            
-        </div> 
-    )
-}
+	const [Country, setCountry] = useState();
+	const apiFetch = axios
+		.get('https://covid2019-api.herokuapp.com/v2/current')
+		.then(resp => {
+			const test = resp.data.data;
+			setCountry(test);
+			console.log(resp.data.data);
+		});
+	const api = {
+		country: 'Zambia',
+		infected: '232',
+		death: '4',
+	};
+	return (
+		<div className='toplead-container'>
+			<div className='toplead-item'>
+				{/* <h3>{Country}</h3>
+				<p>
+					<i>Infected {api.infected}</i>
+				</p>
+				<p>
+					<i>Deaths {api.death}</i>
+				</p> */}
+
+				<ul className='toplead-ul'>
+					{Country
+						? Country.map(item => (
+								<li className='toplead-item' key={item.id}>
+									<h3>{item.location}</h3>
+									<p>Confirmed {item.confirmed}</p>
+									<p>Active {item.active}</p>
+									<p>Recovered {item.recovered}</p>
+									<p>Deaths {item.deaths}</p>
+								</li>
+						  ))
+						: 'Please wait....'}
+				</ul>
+			</div>
+		</div>
+	);
+};
 
 export default Topleading;
