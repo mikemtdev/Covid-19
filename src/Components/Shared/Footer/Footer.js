@@ -1,25 +1,25 @@
-import React, { Component } from 'react';
-
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
-  return (
-    <div className='Footer-Container'>
-      <div className='Footer-Item'>
-        <ul className='footer-list'>
-          <li>
-            <a href='#'>Contact Us</a>
-          </li>
-          <li>
-            <a href='#'>About us</a>
-          </li>
-          <li>
-            <a href='#'>Copyright 2020</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
+	return (
+		<div className='Footer-Container'>
+			<div className='Footer-Item'>
+				<ul className='footer-list'>
+					<li>
+						<NavLink to='/report'>Reports</NavLink>
+					</li>
+					<li>
+						<NavLink to='/contact_us'>Contact us </NavLink>
+					</li>
+					<li>
+						<NavLink to='/about_us'>About us</NavLink>
+					</li>
+				</ul>
+			</div>
+		</div>
+	);
 };
 
 export default Footer;

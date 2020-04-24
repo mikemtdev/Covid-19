@@ -6,9 +6,7 @@ import Menu from './menu.png';
 import './Header.css';
 
 const Header = () => {
-	// const Toggle = () => {
-	// 	style ={{Display}}
-	// };
+	// const Toggle = {};
 	return (
 		<div className='Header-Container'>
 			<ul className='navigation-list'>

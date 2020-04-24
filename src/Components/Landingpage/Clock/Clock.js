@@ -32,7 +32,7 @@ const Clock = () => {
 			<div className='clock-container'>
 				<h1 className='clock-h1'>
 					{Confirmed
-						? `Comfirmed${Confirmed}`
+						? `Comfirmed ${Confirmed}`
 						: 'Please wait....'}
 				</h1>
 				<h3 className='clock-h1'>
