@@ -1,34 +1,36 @@
 import React from 'react';
-
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Redirect,
+} from 'react-router-dom';
+import './App.css';
 import Header from './Components/Shared/Header/Header';
 import Footer from './Components/Shared/Footer/Footer';
-import Clock from './Components/Landingpage/Clock/Clock';
-import Topleading from './Components/Landingpage/TopLeading/TopLeading';
-import Infolinks from './Components/Landingpage/InfoLinks/Infolinks';
-import Api from './Components/Api/Api';
-
-import './App.css';
+import Home from './Components/Home';
+import Downloads from './Components/Downloads/Downloads';
+import ContactUs from './Components/ContactUs/ContactUs';
+import AboutUs from './Components/AboutUs/AboutUs';
 
 function App() {
-  return (
-    <div className='App'>
-      <div className='Header-Comp'>
-        <Header />
-      </div>
-      <div className='Clock-Comp'>
-        <Clock />
-      </div>
-      <div className='Topleading-Comp'>
-        <Topleading />
-      </div>
-      <div className='Infor-Comp'>
-        <Infolinks />
-      </div>
-      <div className='Footer-Comp'>
-        <Footer />
-      </div>
-    </div>
-  );
+	return (
+		<Router>
+			<Header />
+			<Switch>
+				<Route exact path='/' component={Home} />
+				<Route exact path='/report' component={Downloads} />
+				<Route
+					exact
+					path='/contact_us'
+					component={ContactUs}
+				/>
+				<Route exact path='/about_us' component={AboutUs} />
+			</Switch>
+			<Redirect to='/' />
+			<Footer />
+		</Router>
+	);
 }
 
 export default App;
