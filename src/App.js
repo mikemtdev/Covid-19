@@ -16,21 +16,19 @@ import AboutUs from './Components/AboutUs/AboutUs';
 
 function App() {
 	return (
-		<Router>
-			<Header />
-			<Switch>
-				<Route exact path='/' component={Home} />
-				<Route exact path='/report' component={Downloads} />
-				<Route
-					exact
-					path='/contact_us'
-					component={ContactUs}
-				/>
-				<Route exact path='/about_us' component={AboutUs} />
-			</Switch>
-			<Redirect to='/' />
-			<Footer />
-		</Router>
+		<div>
+			<Router>
+				<Header />
+				<Switch>
+					<Route exact path='/' component={Home} />
+					<Route exact path='/report' component={Downloads} />
+					<Route exact path='/contact_us' component={ContactUs} />
+					<Route exact path='/about_us' component={AboutUs} />
+				</Switch>
+				<Redirect to='/' />
+				<Footer />
+			</Router>
+		</div>
 	);
 }
 

@@ -1,32 +1,28 @@
-
-
 .Downloads-Comp {
-    background-image: url('https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?cs=srgb&dl=background-board-chart-data-590041.jpg&fm=jpg');
-    background-repeat :no-repeat;
-    background-position : center;
-    background-size :cover;
-    padding:1rem 0rem;
-    background-color:#;
-    
+	background-image: url('./Reports.jpeg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 1rem 0rem;
+	background-color: #;
 }
 .Headers {
-    margin:0.5rem 0rem; 
-    color:rgb(0, 0, 0);
+	margin: 0.5rem 0rem;
+	color: rgb(0, 0, 0);
 }
 .download-list {
-    list-style:none;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-around;
-    align-items:center;
-    height:100vh;
-
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
 }
 
 .linkIterm {
-    padding: 0.5rem;
+	padding: 0.5rem;
 }
-.download-list li a{
-    text-decoration:none;
-    color:#000;
+.download-list li a {
+	text-decoration: none;
+	color: #000;
 }

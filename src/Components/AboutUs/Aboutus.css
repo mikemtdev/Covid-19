@@ -1,16 +1,15 @@
 .Aboutus-Container {
-	color:#fff;
-	background-image: url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?cs=srgb&dl=top-view-photo-of-people-near-wooden-table-3183150.jpg&fm=jpg');
+	color: #fff;
+	background-image: url('./Aboutus.jpeg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-around;
-    align-items:center;
-	height:100vh;
-
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
 }
 .Aboutus-p {
-	margin:0 3rem
+	margin: 0 3rem;
 }
