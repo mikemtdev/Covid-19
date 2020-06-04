@@ -33,7 +33,26 @@ const Clock = () => {
   useEffect(() => {
     fetchDataApi(Confirmed, Active, Recovered, Deaths, UpDate);
   }, []);
+  const [Country, setCountry] = useState();
+  const onChangeHandler = (e) => {
+    const evalue = e.target.value;
 
+    const url = `https://covid2019-api.herokuapp.com/v2/country/${evalue}`;
+    const countryApiFetch = axios.get(url).then((resp) => {
+      const apiData = resp.json();
+      setCountry(apiData);
+      console.log(apiData);
+    });
+  };
+  //   const { location, confirmed, deaths, recovered, active } = Country;
+  const location = "";
+  const confirmed = "";
+  const deaths = "";
+  const recovered = "";
+  const active = "";
+
+  console.log(Country);
+  const onClickHandler = (e) => {};
   return (
     <div className="clockmain-Container">
       <div className="clock-container">
@@ -49,13 +68,27 @@ const Clock = () => {
         <h3 className="clock-h1">
           {Deaths ? `Deaths ${Deaths}` : "Please wait...."}
         </h3>
-        {/* <h2 className='clock-h1'>
-					{ `Leading Country `}
-				</h2> */}
 
         <p className="clock-h1">
           <h3>Last Update date</h3> {UpDate ? UpDate : "Please wait...."}
         </p>
+        {/* <div className="search-container">
+          <input
+            type="text"
+            onChange={onChangeHandler}
+            placeholder="Search by Country"
+          />
+          <button type="button" onClick={onClickHandler}>
+            Search
+          </button>
+        </div> */}
+        {/* <div className="searched-country clock-h1 toplead-item">
+          <h3>{location}</h3>
+          <p>Confirmed {confirmed}</p>
+          <p>Active {active}</p>
+          <p>Recovered {recovered}</p>
+          <p>Deaths {deaths}</p>
+        </div> */}
       </div>
     </div>
   );

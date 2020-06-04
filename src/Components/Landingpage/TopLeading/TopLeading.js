@@ -3,14 +3,14 @@ import axios from "axios";
 import "./TopLeading.css";
 
 const Topleading = () => {
-  const [Country, setCountry] = useState();
+  const [Country, setCountry] = useState("");
   const fetchDataApi = async () => {
     const apiFetch = await axios
       .get("https://covid2019-api.herokuapp.com/v2/current")
       .then((resp) => {
         const test = resp.data.data;
         setCountry(test);
-        console.log(resp.data.data);
+        // console.log(resp.data.data);
       });
   };
   useEffect(() => {
@@ -24,14 +24,6 @@ const Topleading = () => {
   return (
     <div className="toplead-container">
       <div className="toplead-item">
-        {/* <h3>{Country}</h3>
-				<p>
-					<i>Infected {api.infected}</i>
-				</p>
-				<p>
-					<i>Deaths {api.death}</i>
-				</p> */}
-
         <ul className="toplead-ul">
           {Country
             ? Country.map((item) => (
