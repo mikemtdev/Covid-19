@@ -1,35 +1,35 @@
 .Contact-Comp {
-	background-image: url('./Contactus.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: rgb(161, 161, 161);
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	height: 100vh;
+  background-image: url("https://images.pexels.com/photos/257923/pexels-photo-257923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(161, 161, 161);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
 }
 .send-form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-input {
-	margin: 0.2rem 0 0 0;
-	font-size: 1rem;
-	border-radius: 2rem;
-	border: none;
-	padding: 0.5rem;
+  margin: 0.2rem 0 0 0;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: none;
+  padding: 0.5rem;
 }
 .send-btn {
-	color: #00f;
-	margin-top: 0.4rem;
-	font-size: 1rem;
-	background-color: #5555;
-	border: solid 1px #e0e0e0;
-	padding: 0.7rem 2rem;
-	border-radius: 2rem;
+  color: #00f;
+  margin-top: 0.4rem;
+  font-size: 1rem;
+  background-color: #5555;
+  border: solid 1px #e0e0e0;
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
 }

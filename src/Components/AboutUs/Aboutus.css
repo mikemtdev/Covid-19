@@ -1,15 +1,15 @@
 .Aboutus-Container {
-	color: #fff;
-	background-image: url('./Aboutus.jpeg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	height: 100vh;
+  color: #fff;
+  background-image: url("https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
 }
 .Aboutus-p {
-	margin: 0 3rem;
+  margin: 0 3rem;
 }
